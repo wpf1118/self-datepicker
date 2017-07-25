@@ -1,0 +1,75 @@
+*{
+	margin:0;
+	padding: 0;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+@import 'mixin';
+$wrapper_width: 240px;
+//包裹容器
+.ui_datepicker_wrapper{
+	position: absolute;
+	top:20px;
+	left:50%;
+	width:$wrapper_width;
+	height: 264px;
+	box-shadow: 2px 2px 8px 2px #ccc;
+	@include transform(translate(-$wrapper_width / 2));
+}
+
+.ui_datepicker_header{
+	padding:0 20px;
+	height: 36px;
+	line-height: 36px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	font-size:16px;
+	.ui_datepicker_btn{
+		display: block;
+		width:36px;
+		cursor: pointer;
+	}
+	.ui_datepicker_btn_prev{
+		float:left;
+	}
+	.ui_datepicker_btn_next{
+		float:right;
+	}
+}
+
+.ui_datepicker_body{
+	padding: 0;
+	table{
+		width:100%;
+		border-collapse:collapse;
+	}
+	thead{
+		height: 40px;
+		line-height: 40px;
+	}
+	tr{
+		
+		&:last-child{
+			td{
+				border-bottom:none;
+			}
+		};
+	}
+	td{
+		border: 1px solid #ccc;
+	    width: 14%;
+	    height: 30px;
+	    text-align: center;
+	    cursor: pointer;
+	    &:first-child{
+	    	border-left:none;
+	    }
+	    &:last-child{
+	    	border-right:none;
+	    }
+	}
+}

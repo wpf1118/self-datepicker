@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.ui_datepicker_wrapper {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 240px;
+  height: 264px;
+  box-shadow: 2px 2px 8px 2px #ccc;
+  -webkit-transition: translate(-120px);
+  -moz-transform: translate(-120px);
+  -ms-transform: translate(-120px);
+  -o-transform: translate(-120px);
+  transform: translate(-120px);
+}
+
+.ui_datepicker_header {
+  padding: 0 20px;
+  height: 36px;
+  line-height: 36px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  font-size: 16px;
+}
+.ui_datepicker_header .ui_datepicker_btn {
+  display: block;
+  width: 36px;
+  cursor: pointer;
+}
+.ui_datepicker_header .ui_datepicker_btn_prev {
+  float: left;
+}
+.ui_datepicker_header .ui_datepicker_btn_next {
+  float: right;
+}
+
+.ui_datepicker_body {
+  padding: 0;
+}
+.ui_datepicker_body table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.ui_datepicker_body thead {
+  height: 40px;
+  line-height: 40px;
+}
+.ui_datepicker_body tr:last-child td {
+  border-bottom: none;
+}
+.ui_datepicker_body td {
+  border: 1px solid #ccc;
+  width: 14%;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.ui_datepicker_body td:first-child {
+  border-left: none;
+}
+.ui_datepicker_body td:last-child {
+  border-right: none;
+}
